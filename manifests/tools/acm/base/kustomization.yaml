@@ -3,9 +3,8 @@ kind: Kustomization
 
 resources:
 - config-namespace.yaml
-#- sealed-secrets-namespace.yaml
-- application.yaml
-- channel.yaml
-- placement-rule.yaml
-# - auth-subscription.yaml
+- cluster-config-channel.yaml
+- sealed-secrets-namespace.yaml
+- sealed-secrets-application.yaml
+- sealed-secrets-placement-rule.yaml
 - sealed-secrets-subscription.yaml
