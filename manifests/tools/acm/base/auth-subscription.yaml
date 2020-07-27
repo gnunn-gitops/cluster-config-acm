@@ -1,12 +1,14 @@
- apiVersion: apps.open-cluster-management.io/v1
- kind: Subscription
- metadata:
-   name: auth
-   namespace: openshift-config
-   annotations:
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: auth
+  namespace: openshift-config
+  annotations:
     apps.open-cluster-management.io/github-path: /manifests/configs/auth-htpass/base
     apps.open-cluster-management.io/github-branch: master
- spec:
+  labels:
+    app: cluster-config
+spec:
   channel: cluster-config/cluster-config
   placement:
     placementRef:
