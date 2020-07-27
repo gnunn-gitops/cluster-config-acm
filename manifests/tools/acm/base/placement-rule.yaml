@@ -1,0 +1,8 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: all-clusters
+spec:
+  # Deploy to all clusters
+  clusterSelector:
+    matchLabels: {}
