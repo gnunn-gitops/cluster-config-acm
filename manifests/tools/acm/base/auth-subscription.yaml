@@ -2,6 +2,7 @@
  kind: Subscription
  metadata:
    name: auth
+   namespace: openshift-config
    annotations:
     apps.open-cluster-management.io/github-path: /manifests/configs/auth-htpass/base
     apps.open-cluster-management.io/github-branch: master

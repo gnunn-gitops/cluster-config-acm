@@ -7,5 +7,4 @@ bases:
 - ../../base
 
 resources:
-- namespace.yaml
 - role-anyuid.yaml

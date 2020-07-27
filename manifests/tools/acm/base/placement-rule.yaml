@@ -2,6 +2,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: all-clusters
+  namespace: cluster-config
 spec:
   # Deploy to all clusters
   clusterSelector:
