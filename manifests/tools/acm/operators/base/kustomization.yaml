@@ -7,3 +7,4 @@ resources:
 - application.yaml
 - placement-rule.yaml
 - pipeline-subscription.yaml
+- jaeger-subscription.yaml

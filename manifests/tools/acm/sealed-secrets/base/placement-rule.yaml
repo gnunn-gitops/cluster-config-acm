@@ -6,4 +6,5 @@ metadata:
 spec:
   # Deploy to all clusters
   clusterSelector:
-    matchLabels: {}
+    matchLabels:
+      environment: dev
