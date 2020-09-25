@@ -1,1 +1,0 @@
-oc apply -k manifests/tools/acm/channels/base
