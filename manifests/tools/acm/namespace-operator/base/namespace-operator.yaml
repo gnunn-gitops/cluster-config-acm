@@ -1,0 +1,16 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: namespace-config-operator
+  namespace: namespace-configuration-operator
+  annotations:
+    apps.open-cluster-management.io/github-path: /manifests/apps/namespace-operator/overlays-default
+    apps.open-cluster-management.io/github-branch: master
+  labels:
+    app: operators
+spec:
+  channel: cluster-config/cluster-config
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: dev-clusters
