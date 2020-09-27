@@ -27,7 +27,7 @@ items:
     name: argocd-operator
     namespace: argocd
   spec:
-    channel: argocd/argocd-operator
+    channel: argocd/argocd
     placement:
       placementRef:
         kind: PlacementRule
