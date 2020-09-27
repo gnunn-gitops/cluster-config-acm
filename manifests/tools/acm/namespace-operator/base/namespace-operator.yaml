@@ -7,7 +7,7 @@ metadata:
     apps.open-cluster-management.io/github-path: /manifests/apps/namespace-operator/overlays-default
     apps.open-cluster-management.io/github-branch: master
   labels:
-    app: operators
+    app: namespace-configuration-operator
 spec:
   channel: cluster-config/cluster-config
   placement:
